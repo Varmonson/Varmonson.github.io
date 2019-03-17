@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="设计模式,简单工厂模式,">
 
 
 
@@ -79,16 +79,20 @@
 
 
 
-<meta name="description" content="To be or not to be">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陌尘先生的杂货店">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="&amp;emsp;&amp;emsp;最近在学习设计模式，参考《大话设计模式》这本书，对23种设计模式做一些归档。下面先来看一下简单工厂模式。比如我现在要开发一个简单的计算器，直接创建一个计算器类，里面包含加减乘除四种运算法则，然后创建一个客户端类，根据用户的输入，去做运算。  1234567891011121314151617181920212223/*** 计算器类，计算四种运算法则*/public cla">
+<meta name="keywords" content="设计模式,简单工厂模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简单工厂模式">
+<meta property="og:url" content="http://yoursite.com/2019/03/04/简单工厂模式/index.html">
 <meta property="og:site_name" content="陌尘先生的杂货店">
-<meta property="og:description" content="To be or not to be">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;最近在学习设计模式，参考《大话设计模式》这本书，对23种设计模式做一些归档。下面先来看一下简单工厂模式。比如我现在要开发一个简单的计算器，直接创建一个计算器类，里面包含加减乘除四种运算法则，然后创建一个客户端类，根据用户的输入，去做运算。  1234567891011121314151617181920212223/*** 计算器类，计算四种运算法则*/public cla">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2019/03/04/简单工厂模式/20190204_esayfactory01.jpg">
+<meta property="og:updated_time" content="2019-03-17T14:51:26.162Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陌尘先生的杂货店">
-<meta name="twitter:description" content="To be or not to be">
+<meta name="twitter:title" content="简单工厂模式">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;最近在学习设计模式，参考《大话设计模式》这本书，对23种设计模式做一些归档。下面先来看一下简单工厂模式。比如我现在要开发一个简单的计算器，直接创建一个计算器类，里面包含加减乘除四种运算法则，然后创建一个客户端类，根据用户的输入，去做运算。  1234567891011121314151617181920212223/*** 计算器类，计算四种运算法则*/public cla">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/04/简单工厂模式/20190204_esayfactory01.jpg">
 
 
 
@@ -118,7 +122,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/04/简单工厂模式/">
 
 
 
@@ -126,7 +130,7 @@
 
 <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
 
-  <title>陌尘先生的杂货店</title>
+  <title>简单工厂模式 | 陌尘先生的杂货店</title>
   
 
 
@@ -145,8 +149,7 @@
     
   
 
-  <div class="container sidebar-position-right 
-  page-home">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -281,9 +284,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -313,9 +316,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/04/简单工厂模式/" itemprop="url">简单工厂模式</a></h1>
+          <h1 class="post-title" itemprop="name headline">简单工厂模式</h1>
         
 
         <div class="post-meta">
@@ -417,18 +418,33 @@
       
 
       
-        
-          
-          &emsp;&emsp;最近在学习设计模式，参考《大话设计模式》这本书，对23种设计模式做一些归档。下面先来看一下简单工厂模式。比如我现在要开发一个简单的计算器，直接创建一个计算器类，里面包含加减乘除
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/03/04/简单工厂模式/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <font face="华文楷体">&emsp;&emsp;最近在学习设计模式，参考《大话设计模式》这本书，对23种设计模式做一些归档。下面先来看一下简单工厂模式。</font><br><font face="华文楷体">比如我现在要开发一个简单的计算器，直接创建一个计算器类，里面包含加减乘除四种运算法则，然后创建一个客户端类，根据用户的输入，去做运算。</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 计算器类，计算四种运算法则</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Ccalculator</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">add</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> firstNum + secNum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">sub</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>&#123;</span><br><span class="line">         <span class="keyword">return</span> firstNum - secNum;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">multiplication</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>&#123;</span><br><span class="line">         <span class="keyword">return</span> firstNum * secNum;</span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">division</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>&#123;</span><br><span class="line">         <span class="keyword">if</span> (secNum == <span class="number">0</span>)&#123;</span><br><span class="line">             <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"除数不能为0！"</span>);</span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> firstNum / secNum;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体"> 客户端代码：</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 客户端实现计算器</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CstApp</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请输入第一个数:"</span>);</span><br><span class="line">        String firstNum = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请选择输入操作符+, -, *, ×, /:"</span>);</span><br><span class="line">        String operator = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请输入第二个数："</span>);</span><br><span class="line">        String secNum = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        scanner.close();</span><br><span class="line">        Calculator calculate = CalculatorFacotry.createCalculate(operator);</span><br><span class="line">        Double result = calculate.arithmetic(Double.valueOf(firstNum), Double.valueOf(secNum));</span><br><span class="line">          System.out.println(<span class="string">"运算结果为:"</span> + result);</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">&emsp;&emsp;那此时如果我要做修改，再增加一个取模运算呢，就需要同时修改计算器类和客户端代码。首先在计算器类中添加一个取模的方法:</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">mod</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (secNum == <span class="number">0</span>)&#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"除数不能为0！"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> firstNum % secNum;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">然后在客户端再加一个取模的判断条件。</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> <span class="string">"%"</span>:</span><br><span class="line">     result = ccalculator.mod(Double.valueOf(firstNum), Double.valueOf(secNum));</span><br><span class="line">     <span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">我们可以看到，这么做虽然也能实现，但是耦合度太高了。一旦新增了需求，就要同时修改服务端和客户端代码，这样显然不好。对于计算器这个对象，他有一个运算的方法，因此我们可以定义一个Calculator接口，接口中声明一个arithmetic()方法。然后将每一个运算法则抽取出一个类实现Calculator接口，重写arithmetic()方法。然后再定义一个工厂类，利用多肽，来创建不同实例。UML图如下：</font><br><img src="/2019/03/04/简单工厂模式/20190204_esayfactory01.jpg" alt=""><br><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 计算器接口，接口中声明一个算术方法</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line">	<span class="function">Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 加法类</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AddImpl</span> <span class="keyword">implements</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> firstNum + secNum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 减法类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubImpl</span> <span class="keyword">implements</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> firstNum - secNum;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 乘法类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Multiplication</span> <span class="keyword">implements</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">return</span> firstNum * secNum;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 除法类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DivisionImpl</span> <span class="keyword">implements</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span> </span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (secNum == <span class="number">0</span>)&#123;</span><br><span class="line">           <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"除数不能为0"</span>);</span><br><span class="line">       &#125;</span><br><span class="line">   <span class="keyword">return</span> firstNum / secNum;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><br><font face="华文楷体">定义一个工厂类，根据传入的运算符，生成对应的对象的实例：</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 生产计算器的工厂类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CalculatorFacotry</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据运算符生产计算器的工厂</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> operator 运算符</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Calculator <span class="title">createCalculate</span><span class="params">(String operator)</span></span>&#123;</span><br><span class="line">        Calculator calculator = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">switch</span> (operator)&#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"+"</span>:</span><br><span class="line">                calculator = <span class="keyword">new</span> AddImpl();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"-"</span>:</span><br><span class="line">                calculator = <span class="keyword">new</span> SubImpl();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"*"</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"×"</span>:</span><br><span class="line">                calculator = <span class="keyword">new</span> Multiplication();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="string">"/"</span>:</span><br><span class="line">                calculator = <span class="keyword">new</span> DivisionImpl();</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"您的操作有误！"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> calculator;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">客户端实例化工厂对象，调用工厂创建计算器的方法，创建实例：</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 客户端利用工厂类实现计算器</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CstApp</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请输入第一个数:"</span>);</span><br><span class="line">        String firstNum = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请选择输入操作符+, -, *, ×, /:"</span>);</span><br><span class="line">        String operator = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"请叔叔第二个数："</span>);</span><br><span class="line">        String secNum = scanner.nextLine();</span><br><span class="line"></span><br><span class="line">        scanner.close();</span><br><span class="line">        <span class="comment">// 传入运算符，调用工厂方法创建创建实例对象</span></span><br><span class="line">        Calculator calculate = CalculatorFacotry.createCalculate(operator);</span><br><span class="line">        Double result = calculate.arithmetic(Double.valueOf(firstNum), Double.valueOf(secNum));</span><br><span class="line">        System.out.println(<span class="string">"运算结果为:"</span> + result);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">此时我们要再增加一个取模运算的话，那么我只要创建一个取模的类实现Calculator接口</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 取模类，实现计算器接口</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ModImpl</span> <span class="keyword">implements</span> <span class="title">Calculator</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Double <span class="title">arithmetic</span><span class="params">(<span class="keyword">double</span> firstNum, <span class="keyword">double</span> secNum)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (secNum == <span class="number">0</span>)&#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"除数不能为0"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> firstNum % secNum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">然后在工厂类中增加一个条件CalculatorFacotry:</font>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> <span class="string">"%"</span>:</span><br><span class="line">     calculator = <span class="keyword">new</span> ModImpl();</span><br><span class="line">     <span class="keyword">break</span>;</span><br></pre></td></tr></table></figure>
+<font face="华文楷体">而对于客户端代码来说，不需要做什么修改。</font>
+
+
       
     </div>
     
@@ -436,383 +452,72 @@
     
 
     
-
+      <div>
+          
+    <div style="text-align:center;color: #ccc;font-size:14px;">
+        ------ 本文结束 ------</div>
+    
+      </div>
     
 
     
 
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    陌尘先生
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="http://yoursite.com/2019/03/04/简单工厂模式/" title="简单工厂模式">http://yoursite.com/2019/03/04/简单工厂模式/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/数据结构-单链表的实现/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陌尘先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/headpicture.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="陌尘先生的杂货店">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/13/数据结构-单链表的实现/" itemprop="url">数据结构-单链表的实现</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-13T22:49:42+08:00">
-                2019-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/数据结构/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/设计模式/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
           
-
+            <a href="/tags/简单工厂模式/" rel="tag"><i class="fa fa-tag"></i> 简单工厂模式</a>
           
-            
-          
-
-          
-          
-             <span id="/2019/01/13/数据结构-单链表的实现/" class="leancloud_visitors" data-flag-title="数据结构-单链表的实现">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  1.3k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          &emsp;&emsp;链表是一种常见的数据结构，链表一般分为单向链表、双向链表和循环链表。本篇主要介绍单链表的原理和使用kjava语言实现单链表结构以及对单链表的一些基本操作。以下是维基百科对单链表
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/13/数据结构-单链表的实现/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/13/数据结构-单链表的实现/" rel="next" title="数据结构-单链表的实现">
+                <i class="fa fa-chevron-left"></i> 数据结构-单链表的实现
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/一直在迷雾中找寻的人/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="陌尘先生">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/headpicture.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="陌尘先生的杂货店">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/13/一直在迷雾中找寻的人/" itemprop="url">一直在迷雾中找寻的人</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-13T15:44:26+08:00">
-                2019-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/生活随感/" itemprop="url" rel="index">
-                    <span itemprop="name">生活随感</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-             <span id="/2019/01/13/一直在迷雾中找寻的人/" class="leancloud_visitors" data-flag-title="一直在迷雾中找寻的人">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">Visitors&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  1.1k
-                </span>
-              
-
-              
-
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          &emsp;&emsp;今天总算是把博客基本搭建好了。从说要搭建博客开始，已经一个月过去了，对于拖延症晚期的我，每个周末前都会做出很完美的计划，然后到了周末还是在床上躺尸。周而复始，所以一直都很辣鸡也
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/13/一直在迷雾中找寻的人/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -822,10 +527,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -833,6 +539,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1088,6 +798,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
