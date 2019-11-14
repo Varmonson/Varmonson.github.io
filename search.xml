@@ -21,8 +21,8 @@
         <category>_ Spring</category>
       </categories>
       <tags>
-        <tag>spring</tag>
         <tag>java</tag>
+        <tag>spring</tag>
         <tag>事务</tag>
       </tags>
   </entry>
@@ -46,9 +46,9 @@
         <category>数据结构</category>
       </categories>
       <tags>
-        <tag>java</tag>
         <tag>数据结构</tag>
         <tag>单链表</tag>
+        <tag>java</tag>
       </tags>
   </entry>
 </search>
