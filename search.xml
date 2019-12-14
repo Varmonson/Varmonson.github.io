@@ -5,10 +5,11 @@
     <url>%2F2019%2F12%2F14%2FPython%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0-%E4%BA%8C%2F</url>
     <content type="text"><![CDATA[1.数字类型 Python中的数字类型 1.1整数类型 1.2浮点数 1.3复数类型 1.4数值运算操作符 1.5数值运算函数 2.字符串类型 2.1字符串类型的表示 2.2字符串操作符 2.3字符串处理函数 2.4字符串处理方法 2.5字符串类型的格式化]]></content>
       <categories>
-        <category>-- Python</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>-- Python -- 语言</tag>
+        <tag>Python</tag>
+        <tag>语言</tag>
       </tags>
   </entry>
   <entry>
@@ -16,10 +17,10 @@
     <url>%2F2019%2F12%2F14%2FPython%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0-%E4%B8%80%2F</url>
     <content type="text"><![CDATA[《论语》中说:”学而时习之”。学习过的知识我们要时常去温习它。对于我们学习的知识，如果我们不去复习的话，过段时间我们可能就全忘记了。最近在中国大学(MOOC)上面学习《Python程序设计》，下面几篇笔记将对于Python语法基础的几个模块进行简单的介绍。​ 至于Python的安装，网上有很多教程，这里不再赘述，仅仅介绍Python的语法体系。对于大多数编程语言来说，基础语法结构都是一致的，只是语法上的实现略有差异，本次也将从以下几个方面对Python语法基础进行介绍。 本篇我们主要先介绍Python的基础语法。 1.基础语法在学习Python的基础知识点之前，我们首先了解一下Python基本的语法格式：变量的声明、注释、行结束符以及语句的输入输出。 1.1变量的声明如果你习惯了其他语言的声明变量，比如Java，刚开始接触Python，你可能会很不适应。在Java语言中，你要声明一个变量，必须要先给出变量的类型。1int i = 5; // 声明一个整形变量 而在Python中，你不需要给出变量的具体类型，Python会根据给出的值的类型，将你定义的变量识别为相应的类型。12# 声明一个整形i = 5; 1.2注释的使用Ⅰ. Python中的单行注释使用的是 ‘#’，比如在上面定义变量的时候我们给出的注释。 Ⅱ.多行注释使用 三个单引号’’’ ‘’’的形式。1234''' 这是python语言的 多行注释''' 其实Python中不存在多行注释的方式。’’’ ‘’’这种表示的只是创建了一个字符串（后面介绍字符串时会提到），但是并没有地方使用这个字符串，所以我们就可以把它当作注释。当一行注释不能满足我们的需求，需要写多行注释的时候，我们可以使用这种方式。 1.3行结束符对于Java语言，除了条件语句之外，一行语句的结束必须要用使用英文分号（’;’），不然编译时就会报错。而对于Python语言来说语句结尾的’;’却不是必须的，可以写也可以不写。但是如果一行包含了多句代码的话则必须写。如下面的输入输出的例子。 1.4语句输入输出Python的输入输出语句比较简单，使用input()函数和print()函数即可。12345678# 输出一个字符串。 一行只有一条语句，可以不加';'&gt;&gt;&gt; print("Hello world!")Hello world!# 获取从键盘输入的字符，并打印输出。 一行有多条语句,语句中间必须写';'&gt;&gt;&gt; s = input("请输入一个字符:"); print(s)请输入一个字符:Hello, world!Hello, world!&gt;&gt;&gt; 本篇先介绍了一些Python的基本的语法格式，让我们对Python有一个简单的认识，下面我们将介绍Python中的基本数据类型。]]></content>
       <categories>
-        <category>-- Python</category>
+        <category>Python</category>
       </categories>
       <tags>
-        <tag>-- Python -- 语言</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
